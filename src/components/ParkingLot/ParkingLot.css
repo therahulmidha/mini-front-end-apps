@@ -1,0 +1,54 @@
+.parking-app {
+  padding: 10px;
+  display: flex;
+  height: 100vh;
+}
+
+.parking-info h1 {
+  text-align: center;
+}
+
+.parking-info {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 30vw;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid yellow;
+}
+
+.vehicle-info-input {
+  width: 80px;
+}
+
+.parking-form-control * {
+  margin: 10px;
+}
+
+.parking-form-control input {
+  /* margin-left: 100px; */
+}
+
+.parking-view {
+  padding: 10px;
+  width: 50vw;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.parking-spots {
+  overflow: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+}
+
+.parking-spot {
+  width: 120px;
+  height: 80px;
+  padding: 5px;
+  border: 1px solid green;
+}

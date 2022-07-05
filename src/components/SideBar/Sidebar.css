@@ -1,0 +1,41 @@
+.sidebar {
+  padding-top: 20px;
+  width: 15%;
+  background-color: #282c34;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px;
+  overflow: auto;
+}
+
+.show-sidebar {
+  background-color: white;
+  height: 90vh;
+}
+
+.sidebar-links a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: black;
+}
+
+.sidebar-links a:hover {
+  font-size: large;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.sidebar-text {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-text p {
+  color: #61DAFB;
+}

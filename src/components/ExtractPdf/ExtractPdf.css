@@ -1,0 +1,24 @@
+.extract-pdf {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  padding: 30px;
+}
+.form-params {
+  margin: 10px;
+  height: 10%;
+}
+
+.form-params * {
+    margin: 10px;
+}
+
+.rendered-pdf {
+  margin: 10px;
+  height: 90%;
+}
+
+.pdf-space{
+    width: 70vw;
+    height: 70vh;
+}

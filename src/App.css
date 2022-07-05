@@ -1,0 +1,28 @@
+.app-container {
+  display: flex;
+  background-color: #282c34;
+}
+
+.main-content {
+  width: 90%;
+}
+
+.main-content {
+  height: 100vh;
+  color: white;
+}
+
+/* Center vertically horizontally */
+.center-vh {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.small-input {
+  width: 80px;
+}
+
+.block {
+  display: block;
+}
