@@ -32,8 +32,6 @@
   flex-direction: column;
   height: 80vh;
   overflow: hidden;
-  align-items: center;
-  justify-content: center;
 }
 
 .sidebar-text p {

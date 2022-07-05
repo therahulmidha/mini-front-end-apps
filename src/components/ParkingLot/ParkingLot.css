@@ -13,9 +13,7 @@
   flex-direction: column;
   padding: 10px;
   width: 30vw;
-  justify-content: center;
   align-items: center;
-  border: 1px solid yellow;
 }
 
 .vehicle-info-input {
@@ -26,14 +24,9 @@
   margin: 10px;
 }
 
-.parking-form-control input {
-  /* margin-left: 100px; */
-}
-
 .parking-view {
   padding: 10px;
   width: 50vw;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,4 +44,8 @@
   height: 80px;
   padding: 5px;
   border: 1px solid green;
+}
+
+.output-message {
+  font-size: x-large;
 }

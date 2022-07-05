@@ -8,12 +8,15 @@ export const ParkingLot = () => {
   const [formInputs, setFormInputs] = useState({
     capacity: DEFAULT_PARKING_CAPACITY,
     parkVehicle: "",
+    availableSpace: DEFAULT_PARKING_CAPACITY,
+    occupiedSpace: 0,
     exitVehicle: "",
     space: parkingLotObject.viewParkingSpace(),
   });
 
+  const [outputMessage, setOutputMessage] = useState("");
+
   const changeCapacityHandler = (event) => {
-    // const conf = confirm("Are you sure you want to change the capacity?");
     event.preventDefault();
     parkingLotObject = new Parking(+formInputs.capacity);
     setFormInputs((prevState) => ({
@@ -31,10 +34,13 @@ export const ParkingLot = () => {
       alert("Please enter valid vehicle number");
       return;
     }
-    parkingLotObject.parkVehicle(formInputs.parkVehicle);
+    const message = parkingLotObject.parkVehicle(formInputs.parkVehicle);
+    setOutputMessage(message);
     setFormInputs((prevState) => ({
       ...prevState,
       space: parkingLotObject.viewParkingSpace(),
+      availableSpace: parkingLotObject.getAvailableSize(),
+      occupiedSpace: parkingLotObject.getOccupiedSpace(),
     }));
   };
 
@@ -44,10 +50,13 @@ export const ParkingLot = () => {
       alert("Please enter valid vehicle number");
       return;
     }
-    parkingLotObject.exitVehicle(formInputs.exitVehicle);
+    const message = parkingLotObject.exitVehicle(formInputs.exitVehicle);
+    setOutputMessage(message);
     setFormInputs((prevState) => ({
       ...prevState,
       space: parkingLotObject.viewParkingSpace(),
+      availableSpace: parkingLotObject.getAvailableSize(),
+      occupiedSpace: parkingLotObject.getOccupiedSpace(),
     }));
   };
 
@@ -64,7 +73,7 @@ export const ParkingLot = () => {
 
   return (
     <div className="parking-app">
-      <form className="parking-info center-vh">
+      <form className="parking-info">
         <h1>Parking Lot Information</h1>
         <div className="parking-form-control">
           <label>Capacity</label>
@@ -85,11 +94,21 @@ export const ParkingLot = () => {
         </div>
         <div className="parking-form-control">
           <label>Available Space</label>
-          <input type="text" disabled value="0" className="small-input" />
+          <input
+            type="text"
+            disabled
+            value={formInputs.availableSpace}
+            className="small-input"
+          />
         </div>
         <div className="parking-form-control">
           <label>Occupied Space</label>
-          <input type="text" disabled value="0" className="small-input" />
+          <input
+            type="text"
+            disabled
+            value={formInputs.occupiedSpace}
+            className="small-input"
+          />
         </div>
         <div className="parking-form-control">
           <label>Park Vehicle</label>
@@ -117,6 +136,7 @@ export const ParkingLot = () => {
             Exit
           </button>
         </div>
+        <p className="output-message">{outputMessage}</p>
       </form>
       <div className="parking-view">
         <h1>Parking View</h1>

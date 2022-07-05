@@ -8,13 +8,10 @@ export class Parking {
   parkVehicle(vehicleNumber) {
     const availableIndex = this.#getNextAvailableIndex();
     if (availableIndex === -1) {
-      console.log("Sorry No space left");
-      return;
+      return "Sorry No space left";
     }
     this.#parkingSpace[availableIndex] = vehicleNumber;
-    console.log(
-      `Vehicle ${vehicleNumber} has now parked at: ${availableIndex}`
-    );
+    return `Vehicle ${vehicleNumber} is now parked at: #${availableIndex}`;
   }
 
   exitVehicle(vehicleNumber) {
@@ -23,9 +20,9 @@ export class Parking {
     );
     if (vehicleIndex !== -1) {
       this.#parkingSpace[vehicleIndex] = null;
-      console.log(`Vehicle ${vehicleNumber} has now exited`);
+      return `Vehicle ${vehicleNumber} has now exited`;
     } else {
-      console.log(`Sorry this vehicle is not parked inside the parking`);
+      return `Sorry this vehicle is not parked inside the parking`;
     }
   }
 
@@ -35,6 +32,10 @@ export class Parking {
 
   getAvailableSize() {
     return this.#parkingSpace.filter((space) => space === null).length;
+  }
+
+  getOccupiedSpace() {
+    return this.#parkingSpace.filter((space) => space !== null).length;
   }
 
   #getNextAvailableIndex() {
