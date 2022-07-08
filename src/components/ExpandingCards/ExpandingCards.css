@@ -1,0 +1,59 @@
+.img-cards {
+  height: 90vh;
+  width: 80vw;
+}
+
+.panel {
+  /* width auto and height 100% */
+  background-size: auto 100%;
+
+  /* when we view the image collapsed, the area we want to see */
+  background-position: center;
+
+  /* no image repeat incase of smaller image */
+  background-repeat: no-repeat;
+
+  /* Specifies the components of a flexible length */
+  flex: 0.5;
+
+  height: 80vh;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 10px;
+
+  /* show transition while applying flex with ease in easing function  */
+  transition: flex 0.7s ease-in;
+
+  /* for positioning the h3 inside as absolute */
+  position: relative;
+}
+
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+  .img-cards {
+    width: 100vw;
+  }
+
+  /* show only 3 images on small screens */
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}

@@ -11,7 +11,7 @@ export const routes = [
   },
   {
     path: "/pdf-extraction",
-    name: "Extract Pdf",
+    name: "Extract Pages from PDF",
     element: <ExtractPdf />,
   },
   {
