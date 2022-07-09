@@ -2,6 +2,7 @@ import { Home } from "./components/Home/Home";
 import { ExpandingCards } from "./components/ExpandingCards/ExpandingCards";
 import { ParkingLot } from "./components/ParkingLot/ParkingLot";
 import { ExtractPdf } from "./components/ExtractPdf/ExtractPdf";
+import { ProgressSteps } from "./components/ProgressSteps/ProgressSteps";
 
 export const routes = [
   {
@@ -24,5 +25,9 @@ export const routes = [
     name: "Expanding Cards",
     element: <ExpandingCards />,
   },
-  // design principles
+  {
+    path: "/progress-steps",
+    name: "Progress Steps",
+    element: <ProgressSteps />,
+  },
 ];

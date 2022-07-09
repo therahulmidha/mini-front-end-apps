@@ -1,0 +1,45 @@
+.progress-steps-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.progress-steps {
+  display: flex;
+}
+
+.progress-step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-number {
+  font-size: x-large;
+  border: 5px solid grey;
+  border-radius: 50%;
+  padding: 0 10px;
+  background-color: white;
+  color: black;
+}
+
+.progress-process {
+    border-top: 10px solid grey;
+    width: 5vw;
+}
+
+.active-process-number {
+  border: 5px solid #385ED7;
+}
+
+.active-bg {
+  background-color: #385ED7;
+}
+
+.active-progress-process {
+  border-top: 10px solid #385ED7;
+}
+
+.progress-button {
+  margin: 5px;
+}
