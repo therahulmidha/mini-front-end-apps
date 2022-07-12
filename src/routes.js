@@ -3,6 +3,8 @@ import { ExpandingCards } from "./components/ExpandingCards/ExpandingCards";
 import { ParkingLot } from "./components/ParkingLot/ParkingLot";
 import { ExtractPdf } from "./components/ExtractPdf/ExtractPdf";
 import { ProgressSteps } from "./components/ProgressSteps/ProgressSteps";
+import { RotatingNavigation } from "./components/RotatingNavigation/RotatingNavigation";
+import { HiddenSearchBar } from "./components/HiddenSearchBar/HiddenSearchBar";
 
 export const routes = [
   {
@@ -29,5 +31,15 @@ export const routes = [
     path: "/progress-steps",
     name: "Progress Steps",
     element: <ProgressSteps />,
+  },
+  {
+    path: "/rotating-navigation",
+    name: "Rotating Navigation",
+    element: <RotatingNavigation />,
+  },
+  {
+    path: "/hidden-search",
+    name: "Hidden Search Bar",
+    element: <HiddenSearchBar />,
   },
 ];

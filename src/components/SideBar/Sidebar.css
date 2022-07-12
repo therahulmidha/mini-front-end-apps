@@ -1,7 +1,7 @@
 .sidebar {
   padding-top: 20px;
   width: 15%;
-  background-color: #282c34;
+  background-color: var(--mainBgColor);
   color: white;
   border-radius: 10px;
   text-align: center;
@@ -35,5 +35,5 @@
 }
 
 .sidebar-text p {
-  color: #61DAFB;
+  color: #61dafb;
 }

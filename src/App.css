@@ -1,6 +1,14 @@
+:root {
+  --mainBgColor: #282c34;
+}
+
+.bg-main-color {
+  background-color: var(--mainBgColor);
+}
+
 .app-container {
   display: flex;
-  background-color: #282c34;
+  background-color: var(--mainBgColor);
 }
 
 .main-content {
@@ -12,9 +20,17 @@
   color: white;
 }
 
-/* Center vertically horizontally */
+/* Center vertically horizontally row direction */
 .center-vh {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Center vertically horizontally column direction */
+.center-vh-col {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -26,3 +42,4 @@
 .block {
   display: block;
 }
+
