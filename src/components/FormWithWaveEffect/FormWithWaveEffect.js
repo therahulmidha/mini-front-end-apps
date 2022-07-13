@@ -28,18 +28,17 @@ export const FormWithWaveEffect = () => {
         <h1>Login Form</h1>
         <input
           placeholder="Email"
-          // onFocus={emailFocusHandler}
-          // onBlur={emailFocusHandler}
         />
-        <label className="" ref={inputEmailRef}>
+        <label ref={inputEmailRef} 
+          className="email-label">
           E-mail
         </label>
         <input
           placeholder="Password"
-          // onFocus={passwordFocusHandler}
-          // onBlur={passwordFocusHandler}
         />
-        <label className="" ref={inputPasswordRef}>
+        <label ref={inputPasswordRef} 
+          className="password-label"
+          >
           Password
         </label>
         <button>Login</button>

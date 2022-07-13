@@ -47,8 +47,16 @@
 
 .wave-form-container form label {
   color: transparent;
-  font-weight: bold;
   position: absolute;
+}
+
+/* The following is not correct way just a hidden trial way */
+.email-label {
+  bottom: 55%;
+}
+
+.password-label {
+  top: 55%;
 }
 
 .wave-form-container form label span {
@@ -61,5 +69,5 @@
 /* direct label inside the input when focused */
 .wave-form-container form input:focus + label span {
   color: var(--main-form-color);
-  transform: translateY(-30px);
+  transform: translateY(-50px);
 }
