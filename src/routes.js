@@ -7,6 +7,7 @@ import { RotatingNavigation } from "./components/RotatingNavigation/RotatingNavi
 import { HiddenSearchBar } from "./components/HiddenSearchBar/HiddenSearchBar";
 import { BlurryLoading } from "./components/BlurryLoading/BlurryLoading";
 import { ScrollAnimation } from "./components/ScrollAnimation/ScrollAnimation";
+import { FormWithWaveEffect } from "./components/FormWithWaveEffect/FormWithWaveEffect";
 
 export const routes = [
   {
@@ -53,5 +54,10 @@ export const routes = [
     path: "/scroll-animation",
     name: "Scroll Animation",
     element: <ScrollAnimation />,
+  },
+  {
+    path: "/form-wave-effect",
+    name: "Form with Wave Effect",
+    element: <FormWithWaveEffect />,
   },
 ];
