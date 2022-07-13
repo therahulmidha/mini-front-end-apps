@@ -8,6 +8,7 @@ import { HiddenSearchBar } from "./components/HiddenSearchBar/HiddenSearchBar";
 import { BlurryLoading } from "./components/BlurryLoading/BlurryLoading";
 import { ScrollAnimation } from "./components/ScrollAnimation/ScrollAnimation";
 import { FormWithWaveEffect } from "./components/FormWithWaveEffect/FormWithWaveEffect";
+import { SoundBoard } from "./components/SoundBoard/SoundBoard";
 
 export const routes = [
   {
@@ -59,5 +60,10 @@ export const routes = [
     path: "/form-wave-effect",
     name: "Form with Wave Effect",
     element: <FormWithWaveEffect />,
+  },
+  {
+    path: "/sound-board",
+    name: "Sound Board",
+    element: <SoundBoard />,
   },
 ];

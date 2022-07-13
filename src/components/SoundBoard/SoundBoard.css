@@ -1,0 +1,15 @@
+.sound-board {
+  background-color: #9b67d6;
+  height: 100vh;
+  width: 85vw;
+}
+
+.sound-board button {
+  margin: 20px;
+  padding: 5px;
+  width: 8vw;
+  height: 8vh;
+  background-color: #5d368b;
+  text-align: center;
+  cursor: pointer;
+}
