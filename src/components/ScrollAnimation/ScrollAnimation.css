@@ -1,0 +1,30 @@
+.box-scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 85vw;
+  overflow-x: hidden;
+}
+
+.blue-box {
+  height: 100px;
+  width: 200px;
+  background-color: skyblue;
+  margin: 5px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+}
+
+.blue-box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.blue-box-show {
+  transform: translateX(0);
+}
+
+.blue-box-show:nth-of-type(even) {
+  transform: translateX(0);
+}

@@ -1,0 +1,34 @@
+.blurry-loading-container {
+  width: 100%;
+  height: 100%;
+}
+
+.blurry-loading-container img {
+  width: 100%;
+  height: 100%;
+  animation: blurry 5s linear;
+}
+
+.blurry-loading-container h1 {
+    color: white;
+    font-weight: bolder;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+}
+
+@keyframes blurry {
+  0% {
+    filter: blur(50px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+  /* OR use opacity */
+  /* 0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  } */
+}

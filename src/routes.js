@@ -5,6 +5,8 @@ import { ExtractPdf } from "./components/ExtractPdf/ExtractPdf";
 import { ProgressSteps } from "./components/ProgressSteps/ProgressSteps";
 import { RotatingNavigation } from "./components/RotatingNavigation/RotatingNavigation";
 import { HiddenSearchBar } from "./components/HiddenSearchBar/HiddenSearchBar";
+import { BlurryLoading } from "./components/BlurryLoading/BlurryLoading";
+import { ScrollAnimation } from "./components/ScrollAnimation/ScrollAnimation";
 
 export const routes = [
   {
@@ -41,5 +43,15 @@ export const routes = [
     path: "/hidden-search",
     name: "Hidden Search Bar",
     element: <HiddenSearchBar />,
+  },
+  {
+    path: "/blurry-loading",
+    name: "Blurry Loading",
+    element: <BlurryLoading />,
+  },
+  {
+    path: "/scroll-animation",
+    name: "Scroll Animation",
+    element: <ScrollAnimation />,
   },
 ];
