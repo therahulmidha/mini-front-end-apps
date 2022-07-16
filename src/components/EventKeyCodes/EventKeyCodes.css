@@ -1,0 +1,19 @@
+.key-code-container{
+    background-color: #DEDDDE;
+    height: 100vh;
+}
+
+.event-code-data {
+    color: black;
+}
+
+.event-code-data div {
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+.event-code-data div p:nth-last-child(1) {
+    border: 1px solid black;
+    height: 10vh;
+}

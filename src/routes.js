@@ -9,6 +9,7 @@ import { BlurryLoading } from "./components/BlurryLoading/BlurryLoading";
 import { ScrollAnimation } from "./components/ScrollAnimation/ScrollAnimation";
 import { FormWithWaveEffect } from "./components/FormWithWaveEffect/FormWithWaveEffect";
 import { SoundBoard } from "./components/SoundBoard/SoundBoard";
+import { EventKeyCodes } from "./components/EventKeyCodes/EventKeyCodes";
 
 export const routes = [
   {
@@ -65,5 +66,10 @@ export const routes = [
     path: "/sound-board",
     name: "Sound Board",
     element: <SoundBoard />,
+  },
+  {
+    path: "/event-keycodes",
+    name: "Event KeyCodes",
+    element: <EventKeyCodes/>,
   },
 ];
