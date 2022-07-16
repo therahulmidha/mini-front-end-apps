@@ -11,6 +11,8 @@ import { FormWithWaveEffect } from "./components/FormWithWaveEffect/FormWithWave
 import { SoundBoard } from "./components/SoundBoard/SoundBoard";
 import { EventKeyCodes } from "./components/EventKeyCodes/EventKeyCodes";
 import { FaqCollapse } from "./components/FaqCollapse/FaqCollapse";
+import { RandomChoicePicker } from "./components/RandomChoicePicker/RandomChoicePicker";
+import { AnimatedNavigation } from "./components/AnimatedNavigation/AnimatedNavigation";
 
 export const routes = [
   {
@@ -71,11 +73,21 @@ export const routes = [
   {
     path: "/event-keycodes",
     name: "Event KeyCodes",
-    element: <EventKeyCodes/>,
+    element: <EventKeyCodes />,
   },
   {
     path: "/faq-collapse",
     name: "FAQs Collapse",
-    element: <FaqCollapse/>,
+    element: <FaqCollapse />,
+  },
+  {
+    path: "/random-choice-picker",
+    name: "Random Choice Picker",
+    element: <RandomChoicePicker />,
+  },
+  {
+    path: "/animated-navigation",
+    name: "Animated Navigation",
+    element: <AnimatedNavigation />,
   },
 ];

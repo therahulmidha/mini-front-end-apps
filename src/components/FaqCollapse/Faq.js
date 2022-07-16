@@ -9,7 +9,7 @@ export const Faq = ({ q, a }) => {
     <div className={open ? "faq faq-open" : "faq"} onClick={handleFaqClick}>
       <span>
         <h5>{q}</h5>
-        <i class={open ? "fa fa-times" : "fa-solid fa-caret-down"}></i>
+        <i className={open ? "fa fa-times" : "fa-solid fa-caret-down"}></i>
       </span>
       <p>{a}</p>
     </div>

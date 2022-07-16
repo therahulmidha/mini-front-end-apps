@@ -1,0 +1,40 @@
+.animated-navigation {
+  display: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.animated-navigation div:nth-child(1) {
+  background-color: #eafbff;
+  height: 50vh;
+}
+
+.animated-navigation div:nth-child(2) {
+  background-color: #5290f9;
+  height: 50vh;
+}
+
+.animated-navigation div:nth-child(3) {
+  background-color: whitesmoke;
+  border: 1px solid black;
+  color: black;
+  position: absolute;
+  left: 45%;
+  top: 47%;
+}
+
+.animated-navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px 10px 10px -25px;
+}
+
+.animated-navbar ul li {
+  display: block;
+  list-style: none;
+  margin: 3px;
+  padding: 3px;
+}

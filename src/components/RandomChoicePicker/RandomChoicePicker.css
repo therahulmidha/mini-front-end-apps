@@ -1,0 +1,51 @@
+.choices-container {
+  background-color: #2b88f0;
+  height: 100vh;
+  text-align: center;
+}
+
+.choices-container * {
+  width: 40vw;
+}
+
+.picked-choices {
+  display: flex;
+
+  /* allow wrapping onto multiple lines. */
+  flex-wrap: wrap;
+}
+
+.picked-choice {
+  word-wrap: none;
+  margin: 10px;
+  padding: 5px;
+  background-color: #f0932b;
+  border-radius: 20px;
+  width: 5vw;
+  text-align: center;
+}
+
+/* .animate-choice {
+  animation: choiceBlink 0.8s;
+} */
+
+@keyframes choiceBlink {
+  0% {
+    background-color: darkblue;
+  }
+  30% {
+    background-color: #f0932b;
+  }
+  50% {
+    background-color: darkblue;
+  }
+  70% {
+    background-color: #f0932b;
+  }
+  90% {
+    background-color: darkblue;
+  }
+  100% {
+    background-color: #f0932b;
+  }
+}
