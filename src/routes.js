@@ -10,6 +10,7 @@ import { ScrollAnimation } from "./components/ScrollAnimation/ScrollAnimation";
 import { FormWithWaveEffect } from "./components/FormWithWaveEffect/FormWithWaveEffect";
 import { SoundBoard } from "./components/SoundBoard/SoundBoard";
 import { EventKeyCodes } from "./components/EventKeyCodes/EventKeyCodes";
+import { FaqCollapse } from "./components/FaqCollapse/FaqCollapse";
 
 export const routes = [
   {
@@ -71,5 +72,10 @@ export const routes = [
     path: "/event-keycodes",
     name: "Event KeyCodes",
     element: <EventKeyCodes/>,
+  },
+  {
+    path: "/faq-collapse",
+    name: "FAQs Collapse",
+    element: <FaqCollapse/>,
   },
 ];
