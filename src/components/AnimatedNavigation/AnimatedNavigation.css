@@ -5,12 +5,12 @@
   position: relative;
 }
 
-.animated-navigation div:nth-child(1) {
+.animated-navigation > div:nth-child(1) {
   background-color: #eafbff;
   height: 50vh;
 }
 
-.animated-navigation div:nth-child(2) {
+.animated-navigation > div:nth-child(2) {
   background-color: #5290f9;
   height: 50vh;
 }
@@ -20,8 +20,19 @@
   border: 1px solid black;
   color: black;
   position: absolute;
-  left: 45%;
-  top: 47%;
+  left: 40%;
+  top: 45%;
+}
+
+.animated-navbar {
+  display: flex;
+  width: 300px;
+  transition: width 0.6s linear;
+}
+
+.animated-navbar-closed {
+  width: 45px;
+  transition: width 0.6s linear;
 }
 
 .animated-navbar ul {
@@ -32,9 +43,23 @@
   margin: 10px 10px 10px -25px;
 }
 
-.animated-navbar ul li {
-  display: block;
+.open-nav-link {
   list-style: none;
   margin: 3px;
   padding: 3px;
+  opacity: 1;
+  transition: opacity 0.6s linear;
+}
+
+.always-open-nav-link {
+  cursor: pointer;
+  margin: 3px;
+  padding: 3px;
+  list-style: none;
+  transition: transform 0.6s linear;
+}
+
+.closed-nav-link {
+  opacity: 0;
+  transition: opacity 0.6s linear;
 }

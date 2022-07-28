@@ -17,7 +17,7 @@ export const RotatingNavigation = () => {
     >
       <div className="rotating-sidebar">
         <i
-          class={sideBarClicked ? "fa-solid fa-multiply" : "fa-solid fa-bars"}
+          className={sideBarClicked ? "fa-solid fa-multiply" : "fa-solid fa-bars"}
           onClick={clickHandler}
         ></i>
         {sideBarClicked ? (
