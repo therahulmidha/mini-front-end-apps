@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+.inc-counters {
+  background-color: #8e44ad;
+  height: 100vh;
+}
+
+.counter-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* x-axis (cross axis not main axis) */
+}
+
+.counter-wrapper * {
+    margin: 20px;
+}
+
+.counter-wrapper h1 {
+    font-family: 'Muli', sans-serif;
+    font-size: 60px;
+}

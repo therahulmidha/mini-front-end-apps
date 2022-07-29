@@ -13,6 +13,7 @@ import { EventKeyCodes } from "./components/EventKeyCodes/EventKeyCodes";
 import { FaqCollapse } from "./components/FaqCollapse/FaqCollapse";
 import { RandomChoicePicker } from "./components/RandomChoicePicker/RandomChoicePicker";
 import { AnimatedNavigation } from "./components/AnimatedNavigation/AnimatedNavigation";
+import { IncrementingCounters } from "./components/IncrementingCounters/IncrementingCounters";
 
 export const routes = [
   {
@@ -89,5 +90,10 @@ export const routes = [
     path: "/animated-navigation",
     name: "Animated Navigation",
     element: <AnimatedNavigation />,
+  },
+  {
+    path: "/incrementing-counters",
+    name: "Incrementing Counters",
+    element: <IncrementingCounters />,
   },
 ];
