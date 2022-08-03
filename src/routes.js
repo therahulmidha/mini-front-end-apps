@@ -14,6 +14,7 @@ import { FaqCollapse } from "./components/FaqCollapse/FaqCollapse";
 import { RandomChoicePicker } from "./components/RandomChoicePicker/RandomChoicePicker";
 import { AnimatedNavigation } from "./components/AnimatedNavigation/AnimatedNavigation";
 import { IncrementingCounters } from "./components/IncrementingCounters/IncrementingCounters";
+import { DrinkWater } from "./components/DrinkWater/DrinkWater";
 
 export const routes = [
   {
@@ -95,5 +96,10 @@ export const routes = [
     path: "/incrementing-counters",
     name: "Incrementing Counters",
     element: <IncrementingCounters />,
+  },
+  {
+    path: "/drink-water",
+    name: "Drink Water",
+    element: <DrinkWater />,
   },
 ];
